@@ -338,7 +338,7 @@ void DisplayWithoutId()
 {
     List<Asset> Assets = Context.Assets.OrderBy(x => x.Office).ThenBy(x =>x.PurchaseDate).ToList();
     Console.WriteLine();
-    Console.WriteLine(" " + "Type".PadRight(12) + "Brand".PadRight(12) + "Model".PadRight(12) + "Office".PadRight(10) + "Price".PadRight(8) + "Local Price".PadRight(18) + "Date");
+    Console.WriteLine(" " + "Type".PadRight(12) + "Brand".PadRight(12) + "Model".PadRight(12) + "Office".PadRight(10) + "Price".PadRight(9) + "Local Price".PadRight(18) + "Date");
     Console.WriteLine("--------------------------------------------------------------------------------");
     foreach (Asset A in Assets)
     {
@@ -355,7 +355,7 @@ void DisplayWithId()
 {
     List<Asset> Assets = Context.Assets.ToList();
     Console.WriteLine();
-    Console.WriteLine(" " + "ID".PadRight(4) + "Type".PadRight(12) + "Brand".PadRight(12) + "Model".PadRight(12) + "Office".PadRight(10) + "Price".PadRight(8) + "Local Price".PadRight(18) + "Date");
+    Console.WriteLine(" " + "ID".PadRight(4) + "Type".PadRight(12) + "Brand".PadRight(12) + "Model".PadRight(12) + "Office".PadRight(10) + "Price".PadRight(9) + "Local Price".PadRight(18) + "Date");
     foreach (Asset A in Assets)
     {
         dateExpire(A);
